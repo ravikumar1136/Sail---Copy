@@ -107,7 +107,7 @@ export default function OrderPage() {
       })
 
       // Redirect to confirmation page
-      router.push(`/order/confirmation?id=${data.order.id}`)
+      router.push(`/order/confirmation?id=${data.orderId}`)
     } catch (error) {
       console.error("Error creating order:", error)
       toast({
